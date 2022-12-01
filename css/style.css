@@ -1,0 +1,280 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 18px/1 "Roboto", sans-serif;
+  color: #0a0b0f;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.container-fluid {
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.header {
+  margin: 47px 65px;
+}
+
+.nav {
+  margin-left: auto;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav a {
+  padding: 12px 17px;
+}
+
+.nav a + a {
+  margin-left: 46px;
+}
+
+.nav a:hover {
+  border-radius: 17px;
+  background-color: #00ac6a;
+  color: #fff;
+}
+
+.main-section {
+  margin-top: 65px;
+}
+
+.main-title {
+  font-family: "Roboto Condensed";
+  font-size: 112px;
+  font-weight: 700;
+}
+
+.main-text {
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 805px;
+  margin-top: 35px;
+  line-height: 1.6;
+}
+
+.contacts-us-form-tabs {
+  margin-top: 65px;
+}
+
+.tab-navs .nav-item + .nav-item {
+  margin-left: 30px;
+}
+
+.tab-navs .nav-item-link {
+  min-width: 265px;
+  min-height: 100px;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px 5px 0 0;
+  border-bottom-color: #00ac6a;
+  color: #b9babb;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: -1px;
+}
+
+.tab-navs .nav-item-link.active {
+  border-color: #00ac6a;
+  border-bottom-color: #fff;
+  color: #0a0b0f;
+  background-color: #fff;
+}
+
+.contact-us-tabs-content {
+  border: 1px solid #00ac6a;
+  max-width: 1800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1px;
+  border-radius: 5px;
+}
+
+.trusted-us-partners {
+  width: 100%;
+  max-width: 440px;
+  background-color: #00ac6a;
+  padding: 100px 50px 0 50px;
+  margin-left: auto;
+}
+
+.trusted-us-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.3;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+
+.trusted-us-imgs {
+  flex-wrap: wrap;
+}
+
+.trusted-us-img {
+  width: 50%;
+  margin: 30px 0;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.tabs-with-forms {
+  padding: 130px 100px;
+  flex-grow: 1;
+}
+
+.project-type-checkbox {
+  margin-bottom: 20px;
+}
+
+.project-types-part {
+  width: 100%;
+  max-width: 305px;
+}
+
+.project-type-checkbox input {
+  display: none;
+}
+
+.project-type-checkbox > label {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  display: block;
+  cursor: pointer;
+}
+
+.project-type-checkbox > label:hover {
+  border-color: #00ac6a;
+  background-color: #ffffff;
+}
+
+.project-type-checkbox > input:checked + label {
+  background-color: #00ac6a;
+  border-color: #00ac6a;
+}
+
+.project-type-checkbox .project-type-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a0b0f;
+}
+
+.project-team-type-radio-group {
+  margin-top: 45px;
+}
+
+.project-team-type-radio > label {
+  font-size: 16px;
+  color: #c7c8c8;
+  cursor: pointer;
+}
+
+.project-team-type-radio > label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #b2e6d2;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.project-team-type-radio input:checked + label::before {
+  background-color: #fff;
+  padding: 2px;
+  background-clip: content-box;
+}
+
+.project-type-checkbox > input:checked + label .project-team-type-radio label {
+  color: #fff;
+}
+
+.project-type-checkbox > input:checked + label .project-team-type-radio label::before {
+  border-color: #fff;
+}
+
+.months-type-checkbox {
+  margin-left: 90px;
+}
+
+.project-type-radio-months > label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a0b0f;
+  width: 156px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-type-radio-months input:checked + label{
+    color: #00ac6a;
+    border: 1px solid #00ac6a;
+}
+
+
+.project-type-radio-months + .project-type-radio-months {
+  margin-left: 16px;
+}
+
+.months-type-checkbox input {
+  display: none;
+}
